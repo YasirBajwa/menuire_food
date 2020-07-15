@@ -1,0 +1,27 @@
+img.mx-auto.d-block.img-fluid.my-bank-icon {
+    margin: 3% 0px 13% 0px;
+}
+.col-6.col-sm-7.col-md-8.text-center.text-sm-left{
+    line-height: 13px;
+}
+.col-md-3.col-sm-5.col-4.new-card-text-size{
+    font-size: 12px;
+}
+@media only screen and (min-width: 570px) and (max-width:997px){
+    label.name.lead {
+        font-size: 13px;
+    }
+    .col-6.col-sm-7.col-md-8.text-center.text-sm-left{
+        line-height: 10px;
+    }
+    span.text-muted.small.text-truncate {
+        font-size: 9px;
+    }
+    .justify-content-center.align-self-center > span {
+        font-size: 8px;
+    }
+    
+    .col-2.col-sm-3.col-md-2.text-center.text-sm-left.text-md-right.text-xs-center.new-text-size {
+        font-size: 9px;
+    }
+  }

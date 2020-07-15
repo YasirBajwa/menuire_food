@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="./asset/styles/foodDetail.css">
+    
+     <title>Food</title>
+</head>
+<body>
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">
+                      <img src="asset/images/img1.png" width="65" height="65">
+                  </a>
+                </li>
+               
+                <li class="nav-item dropdown bottom-list">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                      <img src="asset/images/location.png" height="15">
+                      <span>36 Park Ave,NYC</span>
+                      
+                  </span>
+                  </a>
+                  <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                
+               
+                <li class="nav-item bottom-list">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <img src="asset/images/search.png" height="15">
+                            <span>Search</span>
+                        </span>
+                    </a>
+                  </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="./registration.html">
+                        
+                            
+                            <span>Become a chief</span>
+                       
+                    </a>
+                  </li>
+                </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="./riderRegistration.html">
+                      
+                            
+                            <span>Become a Driver</span>
+                        
+                    </a>
+                  </li>
+                </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="#">
+                        
+                            
+                            <span>Help</span>
+                       
+                    </a>
+                 
+                  </li>
+                 
+                        
+                    
+                 
+                  <li class="nav-item bottom-list-last">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-danger">
+                            <img src="asset/images/signin.png" width="12">
+                                Sign In</button>
+                              </a>
+                            <span class="last-icon-img">
+                                <img data-toggle="modal" data-target="#sideModalTR" src="asset/images/lastnavicon.png " width="15">
+                            </span>
+                        </span>
+                   
+                  </li>
+                
+              </ul>
+              
+            </div>
+          </nav>
+    </div>
+    <div class="  second-navbar">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6  col-md-6 col-sm-12">
+                <!-- <img src="src/images/enjoy.png" class="img-fluid" width="350" > -->
+               <div class="second-navbar-heading">Enjoy Every Meal</div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="second-navbar-img">
+                <img src="asset/images/food1.png" class="img-fluid" width="400" >
+                 </div>
+              </div>
+            </div>
+       
+      
+    </div>
+    </div>
+<br><br>
+
+    <!---------------------------End of Navbar------------------------>  
+    <main>
+       <div class="rating-wrapper">
+              <div class="resturent" >
+              <h1>17 Resturents Found</h1>
+       </div>
+      <div class=" rating-filter-section ">
+          <div class="dropdown dropdown-rating-section show">
+            <span>Sort:</span>
+            <a class="btn btn-secondary dropdown-toggle"  style="color: black;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Ratings
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          
+            <div class="filter-section">
+              <img src="asset/images/filter.png" alt="">
+              <a href="#">Filter</a>
+              </div>
+                      
+         </div>
+       </div>
+        
+           
+        
+ </main>
+<!-------Second Modal-------------->
+<div class="modal modal-cart fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog2 " role="document">
+    <div class="modal-content modal-content2">
+      
+      <div class="modal-header modal-header2">
+         
+        <table class="table ">
+          <tbody>
+            <tr class="modal-header-tr">
+              <th scope="row">
+                
+               <img src="./asset/images/food2.png" width="90">
+              </th>
+              <td>
+        <div class="modal-dish-name" style="color: white;"><b style="font-size: 18px;"> Jumbo Shrimp</b> <br> by Jonathan Doe.</div>
+           
+
+              </td>
+              <td style="color: white; ">$9.99 <br>
+                <div class="modal-amount-controller">
+                <span class="modal-btn1" style="color: white;">
+                  <i class="fa fa-minus" onclick="minusNum()"></i>
+                </span>
+                <span class="modal-btn2" style="color: white;" id="num-btn">01</span>
+                <span class="modal-btn3 " style="color: white;">
+                  <i class="fa fa-plus "  onclick="plusNum()"></i>
+                </span>
+              </div>
+              </td>
+              
+            </tr>
+           
+           
+            
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-body modal-body2">
+        <table class="table ">
+          <div class="h4">ADD ON</div>
+          <tbody>
+            <tr >
+              <th scope="row" class="dish-name">
+                <input type="radio">
+                <span >Grilled Chicken</span>
+              </th>
+              <td class="modal-controller21">
+                <!-- <div class="modal-amount-controller2"> -->
+                <span class="modal-btn1">
+                  <i class="fa fa-minus" onclick="minusNum()"></i>
+                </span>
+                <span class="modal-btn2" id="num-btn">01</span>
+                <span class="modal-btn3 ">
+                  <i class="fa fa-plus "  onclick="plusNum()"></i>
+                </span>
+               <!-- </div> -->
+              </td>
+              <td>$2.00</td>
+              
+            </tr>
+            <tr>
+              <th scope="row" class="dish-name">
+                <input type="radio">
+                <span >Grilled Chicken</span>
+
+              </th>
+              <td class="modal-controller21">
+                <!-- <div class="modal-amount-controller2"> -->
+                <span class="modal-btn1">
+                  <i class="fa fa-minus" onclick="minusNum()"></i>
+                </span>
+                <span class="modal-btn2" id="num-btn">01</span>
+                <span class="modal-btn3 ">
+                  <i class="fa fa-plus "  onclick="plusNum()"></i>
+                </span>
+              <!-- </div> -->
+              </td>
+              <td>$2.00</td>
+            </tr>
+            <tr >
+              <th scope="row" class="dish-name">
+                <input type="radio">
+                <span >Grilled Chicken</span>
+
+              </th>
+              <td class="modal-controller21">
+                <!-- <div class="modal-amount-controller2"> -->
+                <span class="modal-btn1">
+                  <i class="fa fa-minus" onclick="minusNum()"></i>
+                </span>
+                <span class="modal-btn2" id="num-btn">01</span>
+                <span class="modal-btn3 ">
+                  <i class="fa fa-plus "  onclick="plusNum()"></i>
+                </span>
+                <!-- </div> -->
+              </td>
+              <td>$2.00</td>
+              
+            </tr>
+            <tr>
+              <th scope="row" class="dish-name">
+                <input type="radio">
+                <span >Grilled Chicken</span>
+
+              </th>
+              <td class="modal-controller21">
+                <!-- <div class="modal-amount-controller2"> -->
+                <span class="modal-btn1">
+                  <i class="fa fa-minus" onclick="minusNum()"></i>
+                </span>
+                <span class="modal-btn2" id="num-btn">01</span>
+                <span class="modal-btn3 ">
+                  <i class="fa fa-plus "  onclick="plusNum()"></i>
+                </span>
+              <!-- </div> -->
+              </td>
+              <td>$2.00</td>
+              
+            </tr>
+            
+          </tbody>
+        </table>
+
+      </div>
+      <div class="modal-footer modal-footer2">
+        <button type="button" class="btn btn-danger modal-link-btn"> <a href="./cart.html">Add to Cart -$30</a></button>
+        <button type="button" style="color: white;" class="btn  btn-close" data-dismiss="modal" >
+          Cancel</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------Third Modal-------------->
+<div class="modal modal3 fade right" id="sideModalTR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+
+  <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-dialog3 modal-side modal-top-right" role="document">
+
+
+    <div class="modal-content modal-content3">
+      <div class="modal-header modal-header3">
+        <h4 class="modal-title w-100" id="myModalLabel">My Cart</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body3">
+        <div class="container-cart">
+          <!-- <div class="row"> -->
+            <div class=" cart-col-1">
+              <div><img src="./asset/images/food2.png" width="60">
+                <i class="fa fa-times" style="margin-left: 10px;" aria-hidden="true">2</i></div>
+            </div>
+            <div class=" cart-col-2">
+              <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+            </div>
+            <div class=" cart-col-3 text-secondary">$9.99</div>
+
+          </div><br>
+          <div class="container-cart">
+            <!-- <div class="row"> -->
+              <div class=" cart-col-1">
+                <div><img src="./asset/images/food2.png" width="60">
+                  <i class="fa fa-times" style="margin-left: 10px !important;" aria-hidden="true">2</i>
+                </div>
+              </div>
+              <div class=" cart-col-2">
+                <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+              </div>
+              <div class=" cart-col-3 text-secondary">$9.99</div>
+  
+            </div><br>
+            <div class="container-cart">
+              <!-- <div class="row"> -->
+                <div class=" cart-col-1">
+                  <div><img src="./asset/images/food2.png" width="60">
+                    <i class="fa fa-times" style="margin-left: 10px;" aria-hidden="true">2</i>
+                  </div>
+                </div>
+                <div class=" cart-col-2">
+                  <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+                </div>
+                <div class=" cart-col-3 text-secondary">$9.99</div>
+    
+              </div><br>
+        <div class="cart-bill-section">
+         <div class="container">
+           <div class="row">
+            <div class="col-12 text-secondary bill-detail" style="font-size: 14px;"> Bill detail:</div>
+            </div>
+
+         </div>
+         <div class="container-total-item">
+           <div class=" item-heading"  > Item Total:</div>
+           <div class=" item-amount" > 28.00$</div>
+           </div>
+        <div class="container-delivery">
+           <div class=" delivery-heading" > Delivery Fee:</div>
+           <div class=" delivery-fee" > $4.00</div>
+           
+          </div>
+
+         <hr>
+        <div class="container-total">
+           <div class=" total-amount-heading" > Total:</div>
+           <div class=" total-amount" > $32.00</div>
+           
+          </div><br>
+          <div class="container">
+            <div class="row">
+             <div class="col-12 cart-checkout"> 
+               <button  class="btn btn-danger btn-checkout1"> <a href="./cart.html">Checkout</a></button>
+             </div>
+        </div>
+      </div>
+
+      </div>
+        </div>
+      </div>
+      
+    </div>
+  </div></div></div>
+
+
+
+<!----------Food cart----------------->
+    <div class="food-cart">
+      <div class="container" >
+        <div class="row" style="margin-bottom: 3%;">
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="card">
+              <div class="card-header" style="background:white; border:none;">
+                <div class="row">
+                  <div class="col-md-8 col-sm-8 col-8" >
+                  <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-4 heart-class text-right" id="colo2-heart">
+                        <i class="fa fa-heart-o" style="cursor: pointer;"  aria-hidden="true" onclick="changeImage()"></i>
+                  </div>
+                </div> 
+              </div>
+              
+        
+              <div class="card-body" style="width: 95%;">
+                <img src="asset/images/food2.png" class="card-img-top" alt="...">
+              </div>
+              <div class="card-footer text-center" style="background: white;border:none">
+                <h5 class="">Jumbo Shrimp</h5>
+                <p class="">by Jonathan doe <br>$9.99</p>
+                <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="card">
+              <div class="card-header" style="background:white; border:none;">
+                <div class="row">
+                  <div class="col-md-8 col-sm-8 col-8" >
+                  <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                        <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                  </div>
+                </div> 
+              </div>
+              
+        
+              <div class="card-body" style="width: 95%;">
+                <img src="asset/images/food3.png" class="card-img-top" alt="...">
+              </div>
+              <div class="card-footer text-center" style="background: white;border:none">
+                <h5 class="">Jumbo Shrimp</h5>
+                <p class="">by Jonathan doe <br>$9.99</p>
+                <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="card">
+              <div class="card-header" style="background:white; border:none;">
+                <div class="row">
+                  <div class="col-md-8 col-sm-8 col-8" >
+                  <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                        <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                  </div>
+                </div> 
+              </div>
+              
+        
+              <div class="card-body" style="width: 95%;">
+                <img src="asset/images/food4.png" class="card-img-top" alt="...">
+              </div>
+              <div class="card-footer text-center" style="background: white;border:none">
+                <h5 class="">Jumbo Shrimp</h5>
+                <p class="">by Jonathan doe <br>$9.99</p>
+                <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="card">
+              <div class="card-header" style="background:white; border:none;">
+                <div class="row">
+                  <div class="col-md-8 col-sm-8 col-8" >
+                  <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                        <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                  </div>
+                </div> 
+              </div>
+              
+        
+              <div class="card-body" style="width: 95%;">
+                <img src="asset/images/food5.png" class="card-img-top" alt="...">
+              </div>
+              <div class="card-footer text-center" style="background: white;border:none">
+                <h5 class="">Jumbo Shrimp</h5>
+                <p class="">by Jonathan doe <br>$9.99</p>
+                <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+<!----------------------------------Second row---------------------------->
+<div class="row" style="margin-bottom: 3%;">
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="card">
+      <div class="card-header" style="background:white; border:none;">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 col-8" >
+          <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+          </div>
+        </div> 
+      </div>
+      
+
+      <div class="card-body" style="width: 95%;">
+        <img src="asset/images/food6.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card-footer text-center" style="background: white;border:none">
+        <h5 class="">Jumbo Shrimp</h5>
+        <p class="">by Jonathan doe <br>$9.99</p>
+        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="card">
+      <div class="card-header" style="background:white; border:none;">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 col-8" >
+          <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+          </div>
+        </div> 
+      </div>
+      
+
+      <div class="card-body" style="width: 95%;">
+        <img src="asset/images/food7.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card-footer text-center" style="background: white;border:none">
+        <h5 class="">Jumbo Shrimp</h5>
+        <p class="">by Jonathan doe <br>$9.99</p>
+        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="card">
+      <div class="card-header" style="background:white; border:none;">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 col-8" >
+          <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+          </div>
+        </div> 
+      </div>
+      
+
+      <div class="card-body" style="width: 95%;">
+        <img src="asset/images/food8.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card-footer text-center" style="background: white;border:none">
+        <h5 class="">Jumbo Shrimp</h5>
+        <p class="">by Jonathan doe <br>$9.99</p>
+        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="card">
+      <div class="card-header" style="background:white; border:none;">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 col-8" >
+          <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+          </div>
+        </div> 
+      </div>
+      
+
+      <div class="card-body" style="width: 95%;">
+        <img src="asset/images/food9.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card-footer text-center" style="background: white;border:none">
+        <h5 class="">Jumbo Shrimp</h5>
+        <p class="">by Jonathan doe <br>$9.99</p>
+        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+<div class="row">
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="card">
+      <div class="card-header" style="background:white; border:none;">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 col-8" >
+          <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+          </div>
+        </div> 
+      </div>
+      
+
+      <div class="card-body" style="width: 95%;">
+        <img src="asset/images/food6.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card-footer text-center" style="background: white;border:none">
+        <h5 class="">Jumbo Shrimp</h5>
+        <p class="">by Jonathan doe <br>$9.99</p>
+        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="card">
+      <div class="card-header" style="background:white; border:none;">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 col-8" >
+          <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+          </div>
+        </div> 
+      </div>
+      
+
+      <div class="card-body" style="width: 95%;">
+        <img src="asset/images/food7.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card-footer text-center" style="background: white;border:none">
+        <h5 class="">Jumbo Shrimp</h5>
+        <p class="">by Jonathan doe <br>$9.99</p>
+        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="card">
+      <div class="card-header" style="background:white; border:none;">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 col-8" >
+          <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+          </div>
+        </div> 
+      </div>
+      
+
+      <div class="card-body" style="width: 95%;">
+        <img src="asset/images/food8.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card-footer text-center" style="background: white;border:none">
+        <h5 class="">Jumbo Shrimp</h5>
+        <p class="">by Jonathan doe <br>$9.99</p>
+        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="card">
+      <div class="card-header" style="background:white; border:none;">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 col-8" >
+          <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+          </div>
+        </div> 
+      </div>
+      
+
+      <div class="card-body" style="width: 95%;">
+        <img src="asset/images/food9.png" class="card-img-top" alt="...">
+      </div>
+      <div class="card-footer text-center" style="background: white;border:none">
+        <h5 class="">Jumbo Shrimp</h5>
+        <p class="">by Jonathan doe <br>$9.99</p>
+        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      </div>
+    
+        <br>
+<!----------------------------------Second row---------------------------->
+  </div>
+<!-----------------------Show button---------------->
+<div class="show-more-btn">
+  <button type="button" class="btn  show-more " onclick="showItem()">Show More</button>
+</div>
+<br><br>
+
+  <div class="container" id="show-content" style="display: none;">
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="card">
+          <div class="card-header" style="background:white; border:none;">
+            <div class="row">
+              <div class="col-md-8 col-sm-8 col-8" >
+              <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+              </div>
+              <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                    <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+              </div>
+            </div> 
+          </div>
+          <!-- <img class="card-img-top" src="https://source.unsplash.com/daily" alt="Card image top"> -->
+          
+    
+          <div class="card-body" style="width: 95%;">
+            <img src="asset/images/food10.png" class="card-img-top" alt="...">
+          </div>
+          <!-- <img class="card-img-bottom" src="https://source.unsplash.com/daily" alt="Card image bottom"> -->
+          <div class="card-footer text-center" style="background: white;border:none">
+            <h5 class="">Jumbo Shrimp</h5>
+            <p class="">by Jonathan doe <br>$9.99</p>
+            <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="card">
+          <div class="card-header" style="background:white; border:none;">
+            <div class="row">
+              <div class="col-md-8 col-sm-8 col-8" >
+              <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+              </div>
+              <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                    <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+              </div>
+            </div> 
+          </div>
+          <!-- <img class="card-img-top" src="https://source.unsplash.com/daily" alt="Card image top"> -->
+          
+    
+          <div class="card-body" style="width: 95%;">
+            <img src="asset/images/food11.png" class="card-img-top" alt="...">
+          </div>
+          <!-- <img class="card-img-bottom" src="https://source.unsplash.com/daily" alt="Card image bottom"> -->
+          <div class="card-footer text-center" style="background: white;border:none">
+            <h5 class="">Jumbo Shrimp</h5>
+            <p class="">by Jonathan doe <br>$9.99</p>
+            <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="card">
+          <div class="card-header" style="background:white; border:none;">
+            <div class="row">
+              <div class="col-md-8 col-sm-8 col-8" >
+              <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+              </div>
+              <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                    <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+              </div>
+            </div> 
+          </div>
+          <!-- <img class="card-img-top" src="https://source.unsplash.com/daily" alt="Card image top"> -->
+          
+    
+          <div class="card-body" style="width: 95%;">
+            <img src="asset/images/food12.png" class="card-img-top" alt="...">
+          </div>
+          <!-- <img class="card-img-bottom" src="https://source.unsplash.com/daily" alt="Card image bottom"> -->
+          <div class="card-footer text-center" style="background: white;border:none">
+            <h5 class="">Jumbo Shrimp</h5>
+            <p class="">by Jonathan doe <br>$9.99</p>
+            <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="card">
+          <div class="card-header" style="background:white; border:none;">
+            <div class="row">
+              <div class="col-md-8 col-sm-8 col-8" >
+              <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+              </div>
+              <div class="col-md-4 col-sm-4 col-4 text-right" id="">
+                    <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+              </div>
+            </div> 
+          </div>
+          <!-- <img class="card-img-top" src="https://source.unsplash.com/daily" alt="Card image top"> -->
+          
+    
+          <div class="card-body" style="width: 95%;">
+            <img src="asset/images/food13.png" class="card-img-top" alt="...">
+          </div>
+          <!-- <img class="card-img-bottom" src="https://source.unsplash.com/daily" alt="Card image bottom"> -->
+          <div class="card-footer text-center" style="background: white;border:none">
+            <h5 class="">Jumbo Shrimp</h5>
+            <p class="">by Jonathan doe <br>$9.99</p>
+            <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+    
+    <br><br>
+    <div class="show-more-btn">
+      <button type="button" class="btn  show-more " onclick="LessItem()">Show Less</button>
+    </div>
+    </div>
+<br><br>
+
+
+      <!---------------------------- Site footer ----------------->
+     
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3  col-sm-6 col-md-3">
+              <span><img src="asset/images/img1.png" width="80" alt=""></span><br><br><br>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet. <br>
+                Lorem ipsum dolor sit amet. <br>
+                Lorem ipsum dolor sit amet. <br>
+
+              </p><br><br>
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                <li><a class="linkedin" href="#"><i class="fa fa-instagram"></i></a></li>                 
+              </ul>
+              </p>
+            </div>
+            <div class="col-lg-2  col-xs-6 col-md-2">             
+              <ul class="footer-links">
+                <li><a href="#"><b>ABOUT</b></a></li><br>
+                <li><a href="#">Home</a></li><br>
+                <li><a href="#">About Us</a></li><br>
+                <li><a href="#">Company</a></li><br>
+                <li><a href="#">Our Team</a></li><br>
+                <li><a href="#">Careers</a></li><br>
+                <li><a href="#">Manage Blogs</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2  col-xs-6 col-md-2">
+              <ul class="footer-links">
+                <li><a href="#"><b>CONTACT</b></a></li><br>
+                <li><a href="#">Health & Support</a></li><br>
+                <li><a href="#">Contact with Us</a></li><br>
+                <li><a href="#">Ride with us</a></li><br>               
+              </ul>
+            </div>
+            <div class="col-lg-2  col-xs-6 col-md-2">
+              <ul class="footer-links">
+                <li><a href="#"><b>LEGAL</b></a></li><br>
+                <li><a href="#">Terms & conditions</a></li><br>
+                <li><a href="#">Refund & cancellation</a></li><br>
+                <li><a href="#">Company</a></li><br>
+                <li><a href="#">Our Team</a></li><br>
+                <li><a href="#">Careers</a></li><br>
+                <li><a href="#">Manage Blogs</a></li>
+              </ul>
+            </div>  
+            <div class="col-lg-3 col-xs-6 col-md-3">
+              <ul class="footer-links">
+                <li><a href="#"><b>NEWS LETTER</b></a></li><br>               
+                  <div class="form-group input-icons">
+                    <i class="icon">
+                      <img src="./asset/images/msg.png" width="15" />
+                    </i>
+                    <input
+                      type="email"
+                      class="form-control"
+                     
+                      placeholder="Enter email"
+                    />
+                  </div>
+                <button class="btn last-home-btn ">SEND</button>
+              </ul>
+            </div>
+          </div>         
+          <hr>
+        </div>       
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy;  All Rights Reserved by 
+              </p>
+            </div>
+          </div>
+        </div>
+  </footer>
+  <script src="./asset/scripts/foodDetail.js.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

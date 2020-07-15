@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="./asset/styles/style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+     <title>Food</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="headnev">
+    <a class="navbar-brand" href="#">
+        <img src="./asset/images/img1.png" width="65" alt="svg">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+       
+      </ul>
+      <span class="navbar-text">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item bottom-list">
+            <a class="nav-link" href="./registration.html">
+                
+                    
+                    <span>Become a chief</span>
+               
+            </a>
+          </li>
+        </li>  <li class="nav-item bottom-list">
+            <a class="nav-link" href="./riderRegistration.html">
+              
+                    
+                    <span>Become a Driver</span>
+                
+            </a>
+          </li>
+        </li>  <li class="nav-item bottom-list">
+            <a class="nav-link" href="#">
+                                    
+                    <span>Help</span>              
+            </a>         
+          </li>       
+          <li class="nav-item bottom-list-last">
+            <a class="nav-link" href="#">
+                <button type="button" class="btn btn-danger">
+                    <img src="asset/images/signin.png" width="12">
+                        Sign In</button>
+                      </a>
+                    <span class="last-icon-img">
+                        <img   src="asset/images/lastnavicon.png " data-toggle="modal" data-target="#sideModalTR" width="15">
+                    </span>
+                </span>
+           
+          </li>
+        
+             
+          </ul>
+      </span>
+    </div>
+  </nav>
+</div>
+
+<!---------------------------End of Navbar------------------------>
+
+<!---------Modal--------------->
+<!------------First Modal--------->
+<div class="modal modal1 fade left" id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog modal-dialog1   modal-left modal-notify modal-info" role="document" style="height: 680px;">
+    <div class="modal-content modal-content1">
+      <div >
+        </p>
+
+        <!-- <button type="button" class="close-modal1" data-dismiss="modal" aria-label="Close"> -->
+         <div class="cross-modal1"> <i  class="fa fa-times" class="close-modal1" data-dismiss="modal" aria-label="Close"  aria-hidden="true"></i>
+          
+         </div><!-- <span aria-hidden="true" >×</span> -->
+        <!-- </button> -->
+      </div>
+<br><br>
+      <div class="modal-body modal-body1">
+         <div class="container">
+           <div class="row">
+             <div class="col h2" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+               Search by Location
+             </div>
+         </div>
+          <br><br>
+      </div>
+      <div class="container">
+      <div class="row"> 
+         <div class="col ">
+          <div class="form-group input-icons">
+<!-- <span> -->
+            <i class="icon fa fa-search " id="search-btn">
+            </i>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Search for an area..."
+              onfocus="removeContent()"
+            />
+            <div class="map-img" id="map-img">
+              <img src="./asset/images/map.png">
+            </div>
+           
+            </div>
+ 
+           </div> 
+     
+     </div>
+  </div><br><br>
+
+         <div class="container-fluid">
+           <div class="row ">
+             <div class="col-6 col-md-8 col-sm-8 text-secondary">
+                 RECENT LOCATION
+             </div>
+             <div class="col-6 col-md-4 col-sm-4 clear">
+              <a href="" style="color: rgb(141,64,84) !important;">clear</a>
+             </div>
+           </div>
+         </div>
+<br>
+
+         <div class="container">
+          <div class="row">
+            <div class="col">
+               <i class="fa fa-map-marker"></i>
+                <b> 36 PARK AVE,NEW YORK </b><br>
+               <span class="text-secondary"> United States of America</span>
+            </div>
+            
+          </div>
+        </div>
+        <br>
+
+        <div class="container">
+         <div class="row">
+           <div class="col">
+              <i class="fa fa-map-marker"></i>
+               <b> 36 PARK AVE,NEW YORK </b><br>
+               <span class="text-secondary"> United States of America</span>
+               
+               <!-- United States of America -->
+           </div>
+           
+         </div>
+       </div>
+       <br>
+
+         <div class="container">
+          <div class="row">
+            <div class="col">
+               <i class="fa fa-map-marker"></i>
+                <b> 36 PARK AVE,NEW YORK </b><br>
+               <span class="text-secondary"> United States of America</span>
+                
+                <!-- United States of America -->
+            </div>
+            
+          </div>
+        </div>
+     
+</div></div></div>
+
+
+
+<!-- Modal: modalPoll -->
+</div>
+
+<!-------Second Modal-------------->
+<div class="modal modal-cart fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog2 " role="document">
+    <div class="modal-content modal-content2">
+      
+      <div class="modal-header modal-header2">
+         
+        <table class="table ">
+          <tbody>
+            <tr class="modal-header-tr">
+              <th scope="row">
+                
+               <img src="./asset/images/food2.png" width="90">
+              </th>
+              <td>
+        <div class="modal-dish-name" style="color: white;"><b style="font-size: 18px;"> Jumbo Shrimp</b> <br> by Jonathan Doe.</div>
+           
+
+              </td>
+              <td style="color: white; ">$9.99 <br>
+                <div class="modal-amount-controller">
+                <span class="modal-btn1" style="color: white;">
+                  <i class="fa fa-minus" onclick="minusNum()"></i>
+                </span>
+                <span class="modal-btn2 numBtn"  style="color: white;" id="num-btn">01</span>
+                <span class="modal-btn3 " style="color: white;">
+                  <i class="fa fa-plus "  onclick="plusNum()"></i>
+                </span>
+              </div>
+              </td>
+              
+            </tr>
+           
+           
+            
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-body modal-body2">
+        <table class="table ">
+          <div class="h4">ADD ON</div>
+          <tbody>
+            <tr>
+              <th scope="row" class="dish-name">
+                <input type="radio">
+                <span >Grilled Chicken</span>
+              </th>
+              <td class="modal-controller21">
+                <!-- <div class="modal-amount-controller2"> -->
+                <span class="modal-btn1">
+                  <i class="fa fa-minus" onclick="minusNum()"></i>
+                </span>
+                <span class="modal-btn2 numBtn"  id="num-btn">01</span>
+
+                <!-- <span class="modal-btn2" id="num-btn">01</span> -->
+                <span class="modal-btn3 ">
+                  <i class="fa fa-plus "  onclick="plusNum()"></i>
+                </span>
+               <!-- </div> -->
+              </td>
+              <td>$2.00</td>
+              
+            </tr>
+            <tr>
+              <th scope="row" class="dish-name">
+                <input type="radio">
+                <span >Grilled Chicken</span>
+
+              </th>
+              <td class="modal-controller21">
+                <!-- <div class="modal-amount-controller2"> -->
+                <span class="modal-btn1">
+                  <i class="fa fa-minus" onclick="minusNum()"></i>
+                </span>
+                <span class="modal-btn2" id="num-btn">01</span>
+                <span class="modal-btn3 ">
+                  <i class="fa fa-plus "  onclick="plusNum()"></i>
+                </span>
+              <!-- </div> -->
+              </td>
+              <td>$2.00</td>
+            </tr>
+            <tr >
+              <th scope="row" class="dish-name">
+                <input type="radio">
+                <span >Grilled Chicken</span>
+
+              </th>
+              <td class="modal-controller21">
+                <!-- <div class="modal-amount-controller2"> -->
+                <span class="modal-btn1">
+                  <i class="fa fa-minus" onclick="minusNum()"></i>
+                </span>
+                <span class="modal-btn2 numBtn" id="num-btn">01</span>
+                <span class="modal-btn3 ">
+                  <i class="fa fa-plus "  onclick="plusNum()"></i>
+                </span>
+                <!-- </div> -->
+              </td>
+              <td>$2.00</td>
+              
+            </tr>
+            <tr>
+              <th scope="row" class="dish-name">
+                <input type="radio">
+                <span >Grilled Chicken</span>
+
+              </th>
+              <td class="modal-controller21">
+                <!-- <div class="modal-amount-controller2"> -->
+                <span class="modal-btn1">
+                  <i class="fa fa-minus" onclick="minusNum()"></i>
+                </span>
+                <span class="modal-btn2" id="num-btn">01</span>
+                <span class="modal-btn3 ">
+                  <i class="fa fa-plus "  onclick="plusNum()"></i>
+                </span>
+              <!-- </div> -->
+              </td>
+              <td>$2.00</td>
+              
+            </tr>
+            
+          </tbody>
+        </table>
+
+      </div>
+      <div class="modal-footer modal-footer2">
+        <button type="button" class="btn btn-danger modal-link-btn"> <a href="./cart.html">Add to Cart -$30</a></button>
+        <button type="button" style="color: white;" class="btn  btn-close" data-dismiss="modal" >
+          Cancel</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------Third Modal-------------->
+<div class="modal modal3 fade right" id="sideModalTR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+
+  <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-dialog3 modal-side modal-top-right" role="document">
+
+
+    <div class="modal-content modal-content3">
+      <div class="modal-header modal-header3">
+        <h4 class="modal-title w-100" id="myModalLabel">My Cart</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body3">
+        <div class="container-cart">
+          <!-- <div class="row"> -->
+            <div class=" cart-col-1">
+              <div><img src="./asset/images/food2.png" width="60">
+                <i class="fa fa-times" style="margin-left: 10px;" aria-hidden="true">2</i></div>
+            </div>
+            <div class=" cart-col-2">
+              <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+            </div>
+            <div class=" cart-col-3 text-secondary">$9.99</div>
+
+          </div><br>
+          <div class="container-cart">
+            <!-- <div class="row"> -->
+              <div class=" cart-col-1">
+                <div><img src="./asset/images/food2.png" width="60">
+                  <i class="fa fa-times" style="margin-left: 10px !important;" aria-hidden="true">2</i>
+                </div>
+              </div>
+              <div class=" cart-col-2">
+                <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+              </div>
+              <div class=" cart-col-3 text-secondary">$9.99</div>
+  
+            </div><br>
+            <div class="container-cart">
+              <!-- <div class="row"> -->
+                <div class=" cart-col-1">
+                  <div><img src="./asset/images/food2.png" width="60">
+                    <i class="fa fa-times" style="margin-left: 10px;" aria-hidden="true">2</i>
+                  </div>
+                </div>
+                <div class=" cart-col-2">
+                  <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+                </div>
+                <div class=" cart-col-3 text-secondary">$9.99</div>
+    
+              </div><br>
+        <div class="cart-bill-section">
+         <div class="container">
+           <div class="row">
+            <div class="col-12 text-secondary bill-detail" style="font-size: 14px;"> Bill detail:</div>
+            </div>
+
+         </div>
+         <div class="container-total-item">
+           <div class=" item-heading"  > Item Total:</div>
+           <div class=" item-amount" > 28.00$</div>
+           </div>
+        <div class="container-delivery">
+           <div class=" delivery-heading" > Delivery Fee:</div>
+           <div class=" delivery-fee" > $4.00</div>
+           
+          </div>
+
+         <hr>
+        <div class="container-total">
+           <div class=" total-amount-heading" > Total:</div>
+           <div class=" total-amount" > $32.00</div>
+           
+          </div><br>
+          <div class="container">
+            <div class="row">
+             <div class="col-12 cart-checkout"> 
+               <button  class="btn btn-danger btn-checkout1"> <a href="./cart.html">Checkout</a></button>
+             </div>
+        </div>
+      </div>
+
+      </div>
+        </div>
+      </div>
+      
+    </div>
+  </div></div></div>
+
+<!---------------Modal End----------------------->
+
+    <div class="bottom-section">
+                <div class="header-first-img">
+                    <img src="./asset/images/header12.png" width="240">
+                 </div>
+                 <div class="header-search-wrapper" >
+                   <h1>Find Favourite <span style="color: rgb(141,84,64);">Food</span></h1>
+                    <div class="header-location" >
+                     <span><img data-toggle="modal" data-target="#modalPoll-1" src="./asset/images/location.png" width="18" style="margin-left: 5px;" alt=""></span>
+                    <span style="margin-left: 8px;"  >36 Park Ave,NYC</span>
+                    <span style="margin-left: 8px;"    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./asset/images/drop.png"></span>
+                    <div class="dropdown-menu" >
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>  
+                  </div>
+                    <br><br><br>
+                      <div class="header-input-wrapper">
+                        <input class="mx-sm-0 mb-0" type="password" class="form-control" id="inputPassword2" placeholder=" search clusine here...">
+                        <button type="submit" class="btn  mb-2">SEARCH</button>
+                      </div>              
+                    </div>
+                 <div class="header-last-img ">
+                   <img src="./asset/images/header2.png" width="240">
+                 </div>
+
+              </div>
+
+        <div class="second-header-section">
+             <div class="container">
+                   <div class="row">
+                       <div class="col application-heading">
+                         <h1>Download Our New Appliaction</h1>
+                       </div>
+                       <div class="col app-section">
+                         <div class="app-store">
+                          <img src="./asset/images/play-store.png" width="150"><br><br>
+                          <img src="./asset/images/app-store.png" width="150">
+                         </div>
+                        <div class="second-header-mobile">
+                          <img src="./asset/images/mobile.png" height="290" >      
+                          </div>
+                         </div>
+                   </div>
+             </div>                        
+          </div>  
+          
+<br>
+
+            <div class="container">
+              <div class="row">
+                <div class="col h3 ">
+                  Best Dishes
+                </div>
+                <div class="col text-right" > 
+                 <a href="./foodDetail.html"> View All</a></div>
+              </div>
+              </div>
+
+
+        <br><br>
+
+           <div class="container">
+             <div class="row">
+              <!-- <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4"> -->
+              <div class="  card card-bottom-list mb-3 " style="max-width: 310px; max-height: 160px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4 col-sm-4 col-4 img-card">
+                    <img src="./asset/images/food1.png" mt- width="150" height="150">
+        
+                  </div>
+
+                  <div class="col-md-8 col-sm-8 col-8">
+                    <div class="card-body ">
+                      <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                      <p class="card-text">
+                        <div class="font-weight-bold ">Jumbo Shrimp</div> 
+                      <div class="text-secondary">  by Jonthan Doe.</div>
+                     <div style="display: flex;">
+                      <div class="text-secondary font-weight-bold">  $9.99</div>
+                      <button href="#"  class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                     </div>  
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" card card2 card-bottom-list mb-3 " style=" max-width: 310px;margin-left: 15px ;max-height: 160px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4 col-sm-4 col-4 img-card">
+                    <img src="./asset/images/food1.png" mt- width="150" height="150">
+        
+                  </div>
+
+                  <div class="col-md-8 col-sm-8 col-8">
+                    <div class="card-body ">
+                      <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                      <p class="card-text">
+                        <div class="font-weight-bold ">Jumbo Shrimp</div> 
+                      <div class="text-secondary">  by Jonthan Doe.</div>
+                      <!-- <div class="text-secondary font-weight-bold">  $9.99</div> -->
+                      <div style="display: flex;">
+                        <div class="text-secondary font-weight-bold">  $9.99</div>
+                        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                       </div>  
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card3 card-bottom-list mb-3" style="max-width:  310px;margin-left: 15px  ;max-height: 160px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4 col-sm-4 col-4 img-card">
+                    <img src="./asset/images/food1.png" mt- width="150" height="150">
+        
+                  </div>
+
+                  <div class="col-md-8 col-sm-8 col-8">
+                    <div class="card-body ">
+                      <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                      <p class="card-text">
+                        <div class="font-weight-bold ">Jumbo Shrimp</div> 
+                      <div class="text-secondary">  by Jonthan Doe.</div>
+                      <div style="display: flex;">
+                        <div class="text-secondary font-weight-bold">  $9.99</div>
+                        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                       </div> 
+                      <!-- <div class="text-secondary font-weight-bold">  $9.99</div> -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-bottom-list mb-3" style="max-width: 310px; max-height: 160px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4 col-sm-4 col-4 img-card">
+                    <img src="./asset/images/food1.png" mt- width="150" height="150">
+        
+                  </div>
+
+                  <div class="col-md-8 col-sm-8 col-8">
+                    <div class="card-body ">
+                      <span class="header-text" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                      <p class="card-text">
+                        <div class="font-weight-bold ">Jumbo Shrimp</div> 
+                      <div class="text-secondary">  by Jonthan Doe.</div>
+                      <div style="display: flex;">
+                        <div class="text-secondary font-weight-bold">  $9.99</div>
+                        <button href="#" class="cart-button" data-toggle="modal" data-target="#modalCart"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                       </div> 
+                      <!-- <div class="text-secondary font-weight-bold">  $9.99</div> -->
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div></div>
+           
+             <!-------------------Trending Section--------------------------------------->
+             <br><br><br><br>
+             
+             <div class="trending-section-wrapper">
+               <div class="container ">
+                 
+                  <div class="row trending-heading">
+                  <div class="col  h3">
+                  Trending Chefs
+                </div>
+                <div class="col text-right" > 
+                  <a href="./breakFast.html"> View All </a></div>
+              </div>
+              </div>
+                   <br><br>
+                   <div class="trending-section"> 
+           
+                      <div class="list1 list11">
+                        <div class="list1-img mt-1" >
+                          <img src="./asset/images/trending1.png" width="60">
+                        </div>
+                        <div class="list1-name mt-3">
+                          <span class="header-text1" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> <br>
+                          <div class="h6"> <a href="./breakFast.html">Rebacca Doe</a></div>
+
+                        </div>
+                      </div>
+                      <div class="list1 list12">
+                        <div class="list1-img mt-1" >
+                          <img src="./asset/images/Ellipse 4.png" width="60">
+                        </div>
+                        <div class="list1-name mt-3">
+                          <span class="header-text1" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> <br>
+                          <div class="h6"><a href="./breakFast.html">Rebacca Doe</a></div>
+
+                        </div>
+                      </div>
+                      <div class="list1 list13">
+                        <div class="list1-img mt-1" >
+                          <img src="./asset/images/Ellipse 3.png" width="60">
+                        </div>
+                        <div class="list1-name mt-3">
+                          <span class="header-text1" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> <br>
+                          <div class="h6"><a href="./breakFast.html">Rebacca Doe</a></div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="trending-section2"> 
+           
+                      <div class="list2 list21">
+                        <div class="list1-img mt-1" >
+                          <img src="./asset/images/Ellipse 7.png" width="60">
+                        </div>
+                        <div class="list1-name mt-3">
+                          <span class="header-text1" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> <br>
+                          <div class="h6"><a href="./breakFast.html"> Rebacca Doe</a></div>
+
+                        </div>
+                      </div>
+                      <div class="list2 list22">
+                        <div class="list1-img mt-1" >
+                          <img src="./asset/images/Ellipse 2.png" width="60">
+                        </div>
+                        <div class="list1-name mt-3">
+                          <span class="header-text1" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> <br>
+                          <div class="h6"><a href="./breakFast.html"> Rebacca Doe</a> </div>
+
+                        </div>
+                      </div>
+                      <div class="list2 list23">
+                        <div class="list1-img mt-1" >
+                          <img src="./asset/images/Ellipse 9.png" width="60">
+                        </div>
+                        <div class="list1-name mt-3">
+                          <span class="header-text1" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> <br>
+                          <div class="h6"> <a href="./breakFast.html">Rebacca Doe </a></div>
+
+                        </div>
+                      </div>
+                      <div class="list2 list24">
+                        <div class="list1-img mt-1" >
+                          <img src="./asset/images/Ellipse 8@2x.png" width="60">
+                        </div>
+                        <div class="list1-name mt-3">
+                          <span class="header-text1" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> <br>
+                          <div class="h6"> <a href="./breakFast.html">Rebacca Doe</a></div>
+
+                        </div>
+                      </div>
+
+                   </div>
+                   <div class="trending-section3"> 
+           
+                    <div class="list3 list31">
+                      <div class="list1-img mt-1" >
+                        <img src="./asset/images/Ellipse 5.png" width="60">
+                      </div>
+                      <div class="list1-name mt-3">
+                        <span class="header-text1" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> <br>
+                        <div class="h6"> <a href="./breakFast.html">Rebacca Doe</a></div>
+
+                      </div>
+                    </div>
+                    <div class="list3 list33">
+                      <div class="list1-img mt-1" >
+                        <img src="./asset/images/Ellipse 6@2x.png" width="60">
+                      </div>
+                      <div class="list1-name mt-3">
+                        <span class="header-text1" > <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> <br>
+                        <div class="h6"><a href="./breakFast.html"> Rebacca Doe </a></div>
+
+                      </div>
+                    </div>
+
+                 </div>
+                    </div>
+                    <br><br>
+            
+
+<!-------------------Table------------------------------------------------------>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col h2 table-area">
+                        Choose an Area
+                      </div>
+
+                    </div>
+                  </div>
+               <div class="table-responsive">
+                <!-- <div class="h2 table-area">Choose an Area</div>  -->
+              <table class="table table-borderless">
+                <thead>
+                  <!-- <th>
+                    Choose an Area
+                    </th> -->
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">Aboohar</a> </td>
+                    <td><a href="#">Ahmadnagr</a></td>
+                    <td><a href="#">Amalnar</a></td>
+                    <td><a href="#">Anand</a></td>
+
+
+                  </tr>
+                  <tr>
+                    <td><a href="#">Achalpur</a></td>
+                    <td><a href="#">Ajmar</a></td>
+                    <td><a href="#">Ambala</a></td>
+                    <td><a href="#">Anatapur</a></td>
+
+                  </tr>
+                  <tr>
+                    <td><a href="#">Adialabad</a></td>
+                    <td><a href="#">Akola</a></td>
+                    <td><a href="#">Ambikapur</a></td>
+                    <td><a href="#">Anantapur</a></td>
+
+                  </tr>
+                  <tr>
+                    <td><a href="#">Adialabad</a></td>
+                    <td><a href="#">Akola</a></td>
+                    <td><a href="#">Ambikapur</a></td>
+                    <td><a href="#">Anantapur</a></td>
+
+                  </tr>
+                  <tr>
+                    <td><a href="#">Adialabad</a></td>
+                    <td><a href="#">Akola</a></td>
+                    <td><a href="#">Ambikapur</a></td>
+                    <td><a href="#">Anantapur</a></td>
+
+                  </tr>
+                  <tr>
+                    <td><a href="#">Adialabad</a></td>
+                    <td><a href="#">Akola</a></td>
+                    <td><a href="#">Ambikapur</a></td>
+                    <td><a href="#">Anantapur</a></td>
+
+                  </tr>
+                  <tr>
+                    <td><a href="#">Adialabad</a></td>
+                    <td><a href="#">Akola</a></td>
+                    <td><a href="#">Ambikapur</a></td>
+                    <td><a href="#">Anantapur</a></td>
+
+                  </tr>
+                </tbody>
+              </table>
+
+            </div> 
+
+
+<br><br><br><br><br><br>
+      <!---------------------------- Site footer ----------------->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3  col-sm-6 col-md-3">
+              <span><img src="asset/images/img1.png" width="80" alt=""></span><br><br><br>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet. <br>
+                Lorem ipsum dolor sit amet. <br>
+                Lorem ipsum dolor sit amet. <br>
+
+              </p><br><br>
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                <li><a class="linkedin" href="#"><i class="fa fa-instagram"></i></a></li>                 
+              </ul>
+              </p>
+            </div>
+            <div class="col-lg-2  col-xs-6 col-md-2">             
+              <ul class="footer-links">
+                <li><a href="#"><b>ABOUT</b></a></li><br>
+                <li><a href="#">Home</a></li><br>
+                <li><a href="#">About Us</a></li><br>
+                <li><a href="#">Company</a></li><br>
+                <li><a href="#">Our Team</a></li><br>
+                <li><a href="#">Careers</a></li><br>
+                <li><a href="#">Manage Blogs</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2  col-xs-6 col-md-2">
+              <ul class="footer-links">
+                <li><a href="#"><b>CONTACT</b></a></li><br>
+                <li><a href="#">Health & Support</a></li><br>
+                <li><a href="#">Contact with Us</a></li><br>
+                <li><a href="#">Ride with us</a></li><br>               
+              </ul>
+            </div>
+            <div class="col-lg-2  col-xs-6 col-md-2">
+              <ul class="footer-links">
+                <li><a href="#"><b>LEGAL</b></a></li><br>
+                <li><a href="#">Terms & conditions</a></li><br>
+                <li><a href="#">Refund & cancellation</a></li><br>
+                <li><a href="#">Company</a></li><br>
+                <li><a href="#">Our Team</a></li><br>
+                <li><a href="#">Careers</a></li><br>
+                <li><a href="#">Manage Blogs</a></li>
+              </ul>
+            </div>  
+            <div class="col-lg-3 col-xs-6 col-md-3">
+              <ul class="footer-links">
+                <li><a href="#"><b>NEWS LETTER</b></a></li><br>               
+                  <div class="form-group input-icons">
+                    <i class="icon">
+                      <img src="./asset/images/msg.png" width="15" />
+                    </i>
+                    <input style="background-color: white;"
+                      type="email"
+                      class="form-control"
+                     class="footer-input-field"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                <button class="btn ">SEND</button>
+              </ul>
+            </div>
+          </div>         
+          <hr>
+        </div>       
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy;  All Rights Reserved by 
+              </p>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+    
+
+<script src="./asset/scripts/home.js"></script>
+<script>
+  
+
+  function removeContent(){
+    var a = document.getElementById('map-img').style.display = "none";
+    var b = document.getElementById('search-btn').style.display = "none";
+
+  }
+
+var i = 0;
+    function plusNum() {
+        // document.getElementById('num-btn').innerHTML = ++i;
+        document.getElementsByClassName('numBtn')[0].innerHTML = ++i;
+    }
+     function minusNum() {
+        document.getElementById('numBtn')[0].innerHTML = --i;
+    }
+    
+
+</script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<script src="./src/scripts/script.js"></script>
+
+</body>
+</html>

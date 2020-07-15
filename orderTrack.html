@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./asset/styles/orderStyle.css">   
+<title>Order Tracke</title>
+</head>
+<body>
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">
+                      <img src="asset/images/img1.png" width="65" height="65">
+                  </a>
+                </li>
+               
+                <li class="nav-item dropdown bottom-list">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                      <img src="asset/images/location.png" height="15">
+                      <span>36 Park Ave,NYC</span>
+                      
+                  </span>
+                  </a>
+                  <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                
+               
+                <li class="nav-item bottom-list">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <img src="asset/images/search.png" height="15">
+                            <span>Search</span>
+                        </span>
+                    </a>
+                  </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="./registration.html">
+                        
+                            
+                            <span>Become a chief</span>
+                       
+                    </a>
+                  </li>
+                </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="./riderRegistration.html">
+                      
+                            
+                            <span>Become a Driver</span>
+                        
+                    </a>
+                  </li>
+                </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="#">
+                        
+                            
+                            <span>Help</span>
+                       
+                    </a>
+                 
+                  </li>
+                 
+                        
+                    
+                 
+                  <li class="nav-item bottom-list-last">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-danger">
+                            <img src="asset/images/signin.png" width="12">
+                                Sign In</button>
+                              </a>
+                            <span class="last-icon-img">
+                                <img data-toggle="modal" data-target="#sideModalTR" src="asset/images/lastnavicon.png " width="15">
+                            </span>
+                        </span>
+                   
+                  </li>
+                
+              </ul>
+              
+            </div>
+          </nav>
+    </div>
+
+
+<!------------------Third Modal-------------->
+<div class="modal modal3 fade right" id="sideModalTR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+
+  <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-dialog3 modal-side modal-top-right" role="document">
+
+
+    <div class="modal-content modal-content3">
+      <div class="modal-header modal-header3">
+        <h4 class="modal-title w-100" id="myModalLabel">My Cart</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body3">
+        <div class="container-cart">
+          <!-- <div class="row"> -->
+            <div class=" cart-col-1">
+              <div><img src="./asset/images/food1.png" width="60">
+                <i class="fa fa-times" style="margin-left: 10px;" aria-hidden="true">2</i></div>
+            </div>
+            <div class=" cart-col-2">
+              <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+            </div>
+            <div class=" cart-col-3 text-secondary">$9.99</div>
+
+          </div><br>
+          <div class="container-cart">
+            <!-- <div class="row"> -->
+              <div class=" cart-col-1">
+                <div><img src="./asset/images/food2.png" width="60">
+                  <i class="fa fa-times" style="margin-left: 10px !important;" aria-hidden="true">2</i>
+                </div>
+              </div>
+              <div class=" cart-col-2">
+                <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+              </div>
+              <div class=" cart-col-3 text-secondary">$9.99</div>
+  
+            </div><br>
+            <div class="container-cart">
+              <!-- <div class="row"> -->
+                <div class=" cart-col-1">
+                  <div><img src="./asset/images/food5.png" width="60">
+                    <i class="fa fa-times" style="margin-left: 10px;" aria-hidden="true">2</i>
+                  </div>
+                </div>
+                <div class=" cart-col-2">
+                  <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+                </div>
+                <div class=" cart-col-3 text-secondary">$9.99</div>
+    
+              </div><br>
+        <div class="cart-bill-section">
+         <div class="container">
+           <div class="row">
+            <div class="col-12 text-secondary bill-detail" style="font-size: 14px;"> Bill detail:</div>
+            </div>
+
+         </div>
+         <div class="container-total-item">
+           <div class=" item-heading"  > Item Total:</div>
+           <div class=" item-amount" > 28.00$</div>
+           </div>
+        <div class="container-delivery">
+           <div class=" delivery-heading" > Delivery Fee:</div>
+           <div class=" delivery-fee" > $4.00</div>
+           
+          </div>
+
+         <hr>
+        <div class="container-total">
+           <div class=" total-amount-heading" > Total:</div>
+           <div class=" total-amount" > $32.00</div>
+           
+          </div><br>
+          <div class="container">
+            <div class="row">
+             <div class="col-12 cart-checkout"> 
+               <button  class="btn btn-danger btn-checkout1"> <a href="./cart.html">Checkout</a></button>
+             </div>
+        </div>
+      </div>
+
+      </div>
+        </div>
+      </div>
+      
+    </div>
+  </div></div></div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col order-tracker-heading">
+               <div class="left-icon "><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+               <div class="track-heading h3">Track Order</div>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+
+
+        </div>
+
+    </div> <!----End of first conatiner---->
+
+<br><br>
+    <div class="container">
+        <div class="row">
+
+        <div class="col-lg-7 order-id-section">
+            <div class="user-order-img"><img src="./asset/images/food5.png" width="80"></div>
+            <div class="order-detail"> <b>Jumbo Shrimp green Vaggies</b> <br> <span class="text-secondary">by Jonthan Doe</span> 
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing eli Consequuntur, error!
+            </div>
+            <div class="order-id">#45893</div>
+            
+        </div>
+        <div class="col-lg-4 text-right">
+            <div class="user-order-amount text-secondary"> <b>$9.99</b></div>
+            <div class="reorder-btn">
+                <button class="btn btn-danger"> <a href="./foodDetail.html">Re-Order</a></button>
+            </div>
+
+        </div>
+        </div>
+    </div><!--------End of second container------->
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 order-time-detail">
+                <div class="row order-components">
+                    <div class="col">
+                      <b>  #45893 </b><br>
+                        Order Number
+                        <!-- <span>|</span> -->
+                    </div><span class="vertical-line"></span>
+                    <div class="col">
+                       <b> 12 July,2020 </b> <br>
+                        Order date
+                    </div><span class="vertical-line"></span>
+                    <div class="col">
+                       <b> 45 Min </b><br>
+                        Estimate Time
+                    </div>
+
+
+                </div>
+            </div>
+          </div>
+    </div> <!--End of third container-------->
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 ">
+                <div class="row order-components">
+                    <div class="col">
+
+                   <div class="h3"> STATUS</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 order-tracker-place">
+              <div class="row">
+               <div class="col">
+                   <span><img src="./asset/images/Rectangle 108.png" width="20"></span>
+                   <span style="margin-left: 20px;"><img src="./asset/images/Group 2.png" width="20"></span>
+                   <span> <b>Order Place</b></span>
+               </div>
+               <div class="col text-right">
+                   <div  class="text-secondary">11:55 pm</div>
+                   
+               </div>
+              </div>
+              
+           </div>
+
+          
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="container">
+            <div class="col-md-8 offset-md-1 order-tracker-status-bar">
+                <div class="row">
+                 <div class="col vertical-progress">
+    
+    
+                    </div>
+                
+                </div></div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 order-tracker-confirmed">
+              <div class="row">
+               <div class="col">
+                   <span><img src="./asset/images/Rectangle 109.png" width="20"></span>
+                   <span style="margin-left: 20px;"><img src="./asset/images/Ellipse 6.png" width="20"></span>
+                   <span > <b>Order Confirmed</b></span>
+               </div>
+               <div class="col text-right">
+                   <div  class="text-secondary">12:15 am</div>
+                   
+               </div>
+              </div>
+              
+           </div>
+
+          
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="container">
+            <div class="col-md-8 offset-md-1 order-tracker-status-bar ">
+                <div class="row">
+                 <div class="col vertical-progress">
+                    </div>
+                
+                </div></div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 order-tracker-pickedUp">
+              <div class="row">
+               <div class="col">
+                   <span><img src="./asset/images/Rectangle 109.png" width="20"></span>
+                   <span style="margin-left: 20px;"><img src="./asset/images/e-bike-2-line.png" width="25"></span>
+                   <span > <b>Order Picked Up</b></span>
+               </div>
+               <div class="col text-right">
+                   <div  class="text-secondary">12:30 am</div>
+                   
+               </div>
+              </div>
+              
+           </div>
+
+          
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="container">
+            <div class="col-md-8 offset-md-1 order-tracker-status-bar">
+                <div class="row">
+                 <div class="col vertical-progress">
+    
+    
+                    </div>
+                
+                </div></div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 order-tracker-delivery">
+              <div class="row">
+               <div class="col">
+                   <span><img src="./asset/images/Rectangle 109.png" width="20"></span>
+                   <span style="margin-left: 20px;"><img src="./asset/images/Path 64.png" width="20"></span>
+                   <span > <b>Delivered </b></span>
+               </div>
+               <div class="col text-right">
+                   <div  class="text-secondary">1:00 am</div>
+                   
+               </div>
+              </div>
+              
+           </div>
+
+          
+
+        </div>
+
+    </div>
+<!--------End of Status Tracker Order-->
+    
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-1 ">
+            <div class="row order-components">
+                <div class="col">
+
+               <hr>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+
+
+<!-----Order detail section----------------->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-1 order-tracker-place">
+          <div class="row">
+           <div class="col">
+               <span style="margin-left: 20px;"><img src="./asset/images/Rectangle 74.png" width="30"></span>
+               <span><b>Mexican Salad</b></span>
+           </div>
+           <div class="col text-right">
+               <div class="text-secondary">$ 9.99</div>
+               
+           </div>
+          </div></div>
+          <div class="col-md-8 offset-md-1  ">
+          <div class="row">
+              <div class="col adds-on">
+                  <div class="text-secondary">Adds on</div>
+
+              </div>
+              
+
+          </div>
+          </div>
+          <div class="col-md-8 offset-md-1  ">
+            <div class="row">
+                <div class="col  adds-on">
+                    <div class="text-secondary">American Cheese</div>
+  
+                </div>
+                <div class="col text-right">
+                    <div  class="text-secondary">$1.00</div>
+  
+                </div>
+  
+            </div>
+            </div>
+            <div class="col-md-8 offset-md-1 ">
+                <div class="row">
+                    <div class="col  adds-on">
+                        <div  class="text-secondary">Extra Avacado</div>
+      
+                    </div>
+                    <div class="col text-right">
+                        <div  class="text-secondary">$0.5</div>
+      
+                    </div>
+      
+                </div>
+                </div>
+       
+
+      
+
+    </div>
+
+</div>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-1 order-tracker-place">
+          <div class="row">
+           <div class="col">
+               <span style="margin-left: 20px;"><img src="./asset/images/Rectangle 74.png" width="30"></span>
+               <span><b>Mexican Salad</b></span>
+           </div>
+           <div class="col text-right">
+               <div class="text-secondary">$ 9.99</div>
+               
+           </div>
+          </div></div>
+          <div class="col-md-8 offset-md-1  ">
+          <div class="row">
+              <div class="col adds-on">
+                  <div  class="text-secondary">Adds on</div>
+
+              </div>
+              
+
+          </div>
+          </div>
+          <div class="col-md-8 offset-md-1  ">
+            <div class="row">
+                <div class="col  adds-on">
+                    <div  class="text-secondary">American Cheese</div>
+  
+                </div>
+                <div class="col text-right">
+                    <div  class="text-secondary">$1.00</div>
+  
+                </div>
+  
+            </div>
+            </div>
+            <div class="col-md-8 offset-md-1 ">
+                <div class="row">
+                    <div class="col  adds-on">
+                        <div  class="text-secondary">Extra Avacado</div>
+      
+                    </div>
+                    <div class="col text-right">
+                        <div  class="text-secondary">$0.5</div>
+      
+                    </div>
+      
+                </div>
+                </div>
+       
+
+      
+
+    </div>
+
+
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-1 ">
+            <div class="row order-components">
+                <div class="col">
+
+               <hr>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-1 order-tracker-delivery">
+          <div class="row">
+           <div class="col">
+               <div  class="text-secondary">Sub Total</div>
+           </div>
+           <div class="col text-right">
+               <div  class="text-secondary">$ 10.00</div>
+               
+           </div>
+          </div>
+          
+       </div>
+
+      
+
+    </div>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-1 order-tracker-delivery">
+          <div class="row">
+           <div class="col">
+               <div  class="text-secondary">Tax($5)</div>
+           </div>
+           <div class="col text-right">
+               <div  class="text-secondary">$2.0</div>
+               
+           </div>
+          </div>
+          
+       </div>
+
+      
+
+    </div>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-1 order-tracker-delivery">
+          <div class="row">
+           <div class="col">
+               <div  class="text-secondary">Delivery Charges (6%)</div>
+           </div>
+           <div class="col text-right">
+               <div  class="text-secondary">$15.3</div>
+               
+           </div>
+          </div>
+          
+       </div>
+
+      
+
+    </div>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-1 order-tracker-delivery">
+          <div class="row">
+           <div class="col">
+               <div  class="text-secondary">Service Charges</div>
+           </div>
+           <div class="col text-right">
+               <div  class="text-secondary">$13.3</div>
+               
+           </div>
+          </div>
+          
+       </div>
+
+      
+
+    </div>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-1 order-tracker-delivery">
+          <div class="row">
+           <div class="col">
+               <div  class="text-secondary"><b> Total</b></div>
+           </div>
+           <div class="col text-right">
+               <div  class="text-secondary"><b> $200.00</b></div>
+               
+           </div>
+          </div>
+          
+       </div>
+
+      
+
+    </div>
+
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-1 order-tracker-delivery">
+          <div class="row">
+           <div class="col">
+               <div>
+                   <button class="btn btn-danger cancel-order"> <a href="./foodDetail.html">Cancel Order </a></button>
+               </div>
+           </div>
+           
+          </div>
+          
+       </div>
+
+      
+
+    </div>
+
+</div>
+
+
+<br><br><br>
+
+ <!---------------------------- Site footer ----------------->
+     
+ <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3  col-sm-6 col-md-3">
+          <span><img src="src/images/img1.png" width="80" alt=""></span><br><br><br>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet. <br>
+            Lorem ipsum dolor sit amet. <br>
+            Lorem ipsum dolor sit amet. <br>
+
+          </p><br><br>
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            <li><a class="linkedin" href="#"><i class="fa fa-instagram"></i></a></li>                 
+          </ul>
+          </p>
+        </div>
+        <div class="col-lg-2  col-xs-6 col-md-2">             
+          <ul class="footer-links">
+            <li><a href="#"><b>ABOUT</b></a></li><br>
+            <li><a href="#">Home</a></li><br>
+            <li><a href="#">About Us</a></li><br>
+            <li><a href="#">Company</a></li><br>
+            <li><a href="#">Our Team</a></li><br>
+            <li><a href="#">Careers</a></li><br>
+            <li><a href="#">Manage Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2  col-xs-6 col-md-2">
+          <ul class="footer-links">
+            <li><a href="#"><b>CONTACT</b></a></li><br>
+            <li><a href="#">Health & Support</a></li><br>
+            <li><a href="#">Contact with Us</a></li><br>
+            <li><a href="#">Ride with us</a></li><br>               
+          </ul>
+        </div>
+        <div class="col-lg-2  col-xs-6 col-md-2">
+          <ul class="footer-links">
+            <li><a href="#"><b>LEGAL</b></a></li><br>
+            <li><a href="#">Terms & conditions</a></li><br>
+            <li><a href="#">Refund & cancellation</a></li><br>
+            <li><a href="#">Company</a></li><br>
+            <li><a href="#">Our Team</a></li><br>
+            <li><a href="#">Careers</a></li><br>
+            <li><a href="#">Manage Blogs</a></li>
+          </ul>
+        </div>  
+        <div class="col-lg-3 col-xs-6 col-md-3">
+          <ul class="footer-links">
+            <li><a href="#"><b>NEWS LETTER</b></a></li><br>               
+              <div class="form-group input-icons">
+                <i class="icon">
+                  <img src="./asset/images/msg.png" width="15" />
+                </i>
+                <input
+                  type="email"
+                  class="form-control"
+                 
+                  placeholder="Enter email"
+                />
+              </div>
+            <button class="btn last-home-btn ">SEND</button>
+          </ul>
+        </div>
+      </div>         
+      <hr>
+    </div>       
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy;  All Rights Reserved by 
+          </p>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

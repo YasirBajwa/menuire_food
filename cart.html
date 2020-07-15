@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="./asset/styles/cart.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+
+    
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">
+                      <img src="./asset/images/img1.png" width="65" height="65">
+                  </a>
+                </li>
+               
+                <li class="nav-item dropdown bottom-list">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                      <img src="./asset/images/location.png" height="17">
+                      <span>36 Park Ave,NYC</span>
+                      
+                  </span>
+                  </a>
+                  <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                
+               
+                <li class="nav-item bottom-list">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <img src="./asset/images/search.png" height="15">
+                            <span>Search</span>
+                        </span>
+                    </a>
+                  </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="./registration.html">
+                        
+                            
+                            <span>Become a chief</span>
+                       
+                    </a>
+                  </li>
+                </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="./riderRegistration.html">
+                      
+                            
+                            <span>Become a Driver</span>
+                        
+                    </a>
+                  </li>
+                </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="#">
+                        
+                            
+                            <span>Help</span>
+                       
+                    </a>
+                 
+                  </li>
+                 
+                        
+                    
+                 
+                  <li class="nav-item bottom-list-last">
+                    <a class="nav-link" href="../login_page/index.html">
+                        <button type="button" class="btn btn-danger">
+                            <img src="./asset/images/signin.png" width="12">
+                                Sign In</button>
+                              </a>
+                            <span class="last-icon-img">
+                                <img data-toggle="modal" data-target="#sideModalTR" src="./asset/images/lastnavicon.png " width="15">
+                            </span>
+                        </span>
+                   
+                  </li>
+                
+              </ul>
+              
+            </div>
+          </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="main-box clearfix">
+                    
+                    <div class="table-responsive">
+                        
+                        <table class="table user-list">
+                            <thead>
+                                <tr>
+                                    <th style="border: none"><div class="text-costom-heading">My Cart</div></th>
+                                    
+                                </tr>
+                                <tr>
+                                    <th style="border-top: none"><span>ITEM DETAIL</span></th>
+                                    <th style="border-top: none"><span>QTY</span></th>
+                                    <th class="text-center" style="border-top: none"><span>PRICE</span></th>
+                                    <th class="text-center" style="border-top: none"><span>DELETE</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/img1.png" alt="">
+                                        <div class="card-title1">Jumbo Shrimp green Vaggles</div>
+                                        <span class="user-subhead" style="color: #bbb9b5;">by Jonathan Doe</span>
+                                    </td>
+                                    
+                                    <td>
+                                      
+                                        <div class="input-group input-group1">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-outline-light btn-number minus rounded-left"  data-type="minus" data-field="quant1[1]" >
+                                                    
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>  
+                                                </button>
+                                            </span>
+                                           <span> <input type="text" name="quant1[1]" class="form-control input-number input-number1" value="01" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;" min="00" max="10"></span>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-outline-light btn-number plus rounded-right" data-type="plus" data-field="quant1[1]" >
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                       <b>$9.99</b> 
+                                    </td>
+                                    <td class="text-center">
+                                       
+                                        <a herf="#" class="btn btn-outline-light" style="color:#843232;">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                           </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/img2.png" alt="">
+                                        <div class="card-title1">Jumbo Shrimp green Vaggles</div>
+                                        <span class="user-subhead" style="color: #bbb9b5;">by Jonathan Doe</span>
+                                    </td>
+                                    
+                                    <td>
+                                      
+                                        <div class="input-group input-group1">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-outline-light btn-number minus rounded-left"  data-type="minus" data-field="quant2[1]" >
+                                                    
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>  
+                                                </button>
+                                            </span>
+                                            <span> <input type="text" name="quant2[1]" class="form-control input-number input-number1" value="01" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;" min="00" max="10"></span>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-outline-light btn-number plus rounded-right" data-type="plus" data-field="quant2[1]" >
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <b>$9.99</b> 
+                                    </td>
+                                    <td class="text-center">
+                                       
+                                        <a herf="#"  class="btn btn-outline-light" style="color:#843232;">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                           </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/img3.png" alt="">
+                                        <div class="card-title1">Jumbo Shrimp green Vaggles</div>
+                                        <span class="user-subhead" style="color: #bbb9b5;">by Jonathan Doe</span>
+                                    </td>
+                                    
+                                    <td>
+                                      
+                                        <div class="input-group input-group1">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-outline-light btn-number minus rounded-left"  data-type="minus" data-field="quant3[1]" >
+                                                    
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>  
+                                                </button>
+                                            </span>
+                                            <span> <input type="text" name="quant3[1]" class="form-control input-number input-number1" value="01" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;" min="00" max="10"></span>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-outline-light btn-number plus rounded-right" data-type="plus" data-field="quant3[1]" >
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <b>$9.99</b> 
+                                    </td>
+                                    <td class="text-center">
+                                       
+                                        <a herf="#"  class="btn btn-outline-light" style="color:#843232;">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                           </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="asset/images/img4.png" alt="">
+                                        <div class="card-title1">Jumbo Shrimp green Vaggles</div>
+                                        <span class="user-subhead" style="color: #bbb9b5;">by Jonathan Doe</span>
+                                    </td>
+                                    
+                                    <td>
+                                      
+                                        <div class="input-group input-group1">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-outline-light btn-number minus rounded-left"  data-type="minus" data-field="quant4[1]" >
+                                                    
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>  
+                                                </button>
+                                            </span>
+                                          <span>  <input type="text" name="quant4[1]" class="form-control input-number input-number1" value="01" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;" min="00" max="10"></span>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-outline-light btn-number plus rounded-right" data-type="plus" data-field="quant4[1]" >
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <b>$9.99</b> 
+                                    </td>
+                                    <td class="text-center">
+                                       
+                                       <a herf="#"  class="btn btn-outline-light" style="color:#843232;">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                       </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="text-right">
+                            <span > Total : &nbsp;&nbsp;&nbsp;</span>
+                            <span>$16.15</span>
+                        </div>
+                    </div>
+                 <div class="text-center" >
+                    <button type="button" class="btn btn-custom btn-cart-checkout" ><a href="./checkout.html"> Chekout </a></button>
+                 </div>
+                </div>
+            </div>
+        </div>
+        </div>
+<br><br>
+
+<!------------------Third Modal-------------->
+<div class="modal modal3 fade right" id="sideModalTR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+
+  <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-dialog3 modal-side modal-top-right" role="document">
+
+
+    <div class="modal-content modal-content3">
+      <div class="modal-header modal-header3">
+        <h4 class="modal-title w-100" id="myModalLabel">My Cart</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body3">
+        <div class="container-cart">
+          <!-- <div class="row"> -->
+            <div class=" cart-col-1">
+              <div><img src="./asset/images/food2.png" width="60">
+                <i class="fa fa-times" style="margin-left: 10px;" aria-hidden="true">2</i></div>
+            </div>
+            <div class=" cart-col-2">
+              <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+            </div>
+            <div class=" cart-col-3 text-secondary">$9.99</div>
+
+          </div><br>
+          <div class="container-cart">
+            <!-- <div class="row"> -->
+              <div class=" cart-col-1">
+                <div><img src="./asset/images/food1.png" width="60">
+                  <i class="fa fa-times" style="margin-left: 10px !important;" aria-hidden="true">2</i>
+                </div>
+              </div>
+              <div class=" cart-col-2">
+                <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+              </div>
+              <div class=" cart-col-3 text-secondary">$9.99</div>
+  
+            </div><br>
+            <div class="container-cart">
+              <!-- <div class="row"> -->
+                <div class=" cart-col-1">
+                  <div><img src="./asset/images/food1.png" width="60">
+                    <i class="fa fa-times" style="margin-left: 10px;" aria-hidden="true">2</i>
+                  </div>
+                </div>
+                <div class=" cart-col-2">
+                  <b>Jumbo Shrimp</b> <br> <span class="text-secondary">by Jonathan Doe.</span>
+                </div>
+                <div class=" cart-col-3 text-secondary">$9.99</div>
+    
+              </div><br>
+        <div class="cart-bill-section">
+         <div class="container">
+           <div class="row">
+            <div class="col-12 text-secondary bill-detail" style="font-size: 14px;"> Bill detail:</div>
+            </div>
+
+         </div>
+         <div class="container-total-item">
+           <div class=" item-heading"  > Item Total:</div>
+           <div class=" item-amount" > 28.00$</div>
+           </div>
+        <div class="container-delivery">
+           <div class=" delivery-heading" > Delivery Fee:</div>
+           <div class=" delivery-fee" > $4.00</div>
+           
+          </div>
+
+         <hr>
+        <div class="container-total">
+           <div class=" total-amount-heading" > Total:</div>
+           <div class=" total-amount" > $32.00</div>
+           
+          </div><br>
+          <div class="container">
+            <div class="row">
+             <div class="col-12 cart-checkout"> 
+               <button  class="btn btn-danger btn-checkout1"> <a href="./checkout.html">Checkout</a></button>
+             </div>
+        </div>
+      </div>
+
+      </div>
+        </div>
+      </div>
+      
+    </div>
+  </div></div></div>
+
+
+<!---------------------------- Site footer ----------------->    
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3  col-sm-6 col-md-3">
+          <span><img src="src/image/img1.png" width="80" alt=""></span><br><br><br>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet. <br>
+            Lorem ipsum dolor sit amet. <br>
+            Lorem ipsum dolor sit amet. <br>
+
+          </p><br><br>
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            <li><a class="linkedin" href="#"><i class="fa fa-instagram"></i></a></li>                 
+          </ul>
+          </p>
+        </div>
+        <div class="col-lg-2  col-xs-6 col-md-2">             
+          <ul class="footer-links">
+            <li><a href="#"><b>ABOUT</b></a></li><br>
+            <li><a href="#">Home</a></li><br>
+            <li><a href="#">About Us</a></li><br>
+            <li><a href="#">Company</a></li><br>
+            <li><a href="#">Our Team</a></li><br>
+            <li><a href="#">Careers</a></li><br>
+            <li><a href="#">Manage Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2  col-xs-6 col-md-2">
+          <ul class="footer-links">
+            <li><a href="#"><b>CONTACT</b></a></li><br>
+            <li><a href="#">Health & Support</a></li><br>
+            <li><a href="#">Contact with Us</a></li><br>
+            <li><a href="#">Ride with us</a></li><br>               
+          </ul>
+        </div>
+        <div class="col-lg-2  col-xs-6 col-md-2">
+          <ul class="footer-links">
+            <li><a href="#"><b>LEGAL</b></a></li><br>
+            <li><a href="#">Terms & conditions</a></li><br>
+            <li><a href="#">Refund & cancellation</a></li><br>
+            <li><a href="#">Company</a></li><br>
+            <li><a href="#">Our Team</a></li><br>
+            <li><a href="#">Careers</a></li><br>
+            <li><a href="#">Manage Blogs</a></li>
+          </ul>
+        </div>  
+        <div class="col-lg-3 col-xs-6 col-md-3">
+          <ul class="footer-links">
+            <li><a href="#"><b>NEWS LETTER</b></a></li><br>               
+              <div class="form-group input-icons">
+                <i class="icon">
+                  <img src="./asset/images/msg.png" width="15" />
+                </i>
+                <input
+                  type="email"
+                  class="form-control"
+                 
+                  placeholder="Enter email"
+                />
+              </div>
+            <button class="btn last-home-btn ">SEND</button>
+          </ul>
+        </div>
+      </div>         
+      <hr>
+    </div>       
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy;  All Rights Reserved by 
+          </p>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+        <script >
+            
+$('.btn-number').click(function(e){
+    e.preventDefault();
+    
+    fieldName = $(this).attr('data-field');
+    type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+            
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+            } 
+            if(parseInt(input.val()) == input.attr('min')) {
+                // $(this).attr('disabled', true);
+            }
+
+        } else if(type == 'plus') {
+
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                // $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+    
+    minValue =  parseInt($(this).attr('min'));
+    maxValue =  parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+    
+    name = $(this).attr('name');
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    
+    
+});
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+    
+        </script>
+        
+</body>
+</html>
